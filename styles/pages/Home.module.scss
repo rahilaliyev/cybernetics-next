@@ -7,7 +7,6 @@
   background-size: cover;
   padding-bottom: 100.5px;
   padding-top: 100px;
-  top: -75px;
   position: relative;
 
   z-index: 2;
@@ -63,6 +62,7 @@
         p {
           @include fontSize(16px, 400, 18.75px, $darkColor);
           margin-bottom: 80px;
+          width: 60%;
         }
         a {
           padding: 10px 47.5px;

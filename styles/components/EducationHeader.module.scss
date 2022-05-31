@@ -1,0 +1,16 @@
+.section-info {
+  margin-top: 104px;
+  @include flex-box(center, center);
+  flex-direction: column;
+  h1 {
+    @include fontSize(48px, 400, 56.25px, $mainColor);
+    text-align: center;
+    width: 50%;
+    margin-bottom: 62px;
+  }
+  p {
+    @include fontSize(24px, 500, 28.13px, $mainDarkColor);
+    text-align: center;
+    margin-bottom: 85px;
+  }
+}

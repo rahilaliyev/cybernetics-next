@@ -1,0 +1,30 @@
+.preparation {
+  .preparation-section {
+    background-image: url(../../public/eduBg1.png);
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .preparation-line {
+    height: 83px;
+    background-color: $mainColor;
+  }
+  .preparation-cards {
+    margin-bottom: 165px;
+
+  }
+}
+
+.trainingPage {
+  background-image: url(../../public/eduBg2.png);
+  height: 80vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.academicActivity {
+  background-image: url(../../public/eduBg2.png);
+  height: 80vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

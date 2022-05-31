@@ -3,7 +3,8 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-
+  position: absolute;
+  width: 100%;
   .header-context {
     height: 75px;
     @include flex-box(space-between, center);
