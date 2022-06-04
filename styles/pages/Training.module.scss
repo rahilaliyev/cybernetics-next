@@ -1,0 +1,63 @@
+.trainingSection,
+.academicSection {
+  .traningSection-context,
+  .academicSection-context {
+    .traning-info,
+    .academic-price {
+      @include flex-box(space-between, center);
+      flex-wrap: wrap;
+      .card {
+        display: flex;
+        flex-direction: column;
+        .card-header {
+          width: 245px;
+          padding: 51px 0;
+          border-radius: 10px;
+          h3 {
+            text-align: center;
+            @include fontSize(24px, 500, 28.13px, white);
+          }
+        }
+        .card-info {
+          background: #b3c7db;
+          width: 245px;
+          padding: 24px 0;
+          border-radius: 10px;
+          margin-top: 6px;
+          p {
+            @include fontSize(24px, 500, 28px, white);
+            text-align: center;
+          }
+        }
+
+        &:first-child {
+          .card-header {
+            background-color: $mainColor;
+          }
+        }
+        &:nth-child(2) {
+          .card-header {
+            background-color: #4ecb71;
+          }
+        }
+        &:nth-child(3) {
+          .card-header {
+            background-color: #ffb900;
+          }
+        }
+        &:last-child {
+          .card-header {
+            background-color: #ff6a60;
+          }
+        }
+      }
+    }
+    .training-price,
+    .academic-price {
+      margin-top: 150px;
+      margin-bottom: 150px;
+      @include flex-box(space-between, center);
+      flex-wrap: wrap;
+    }
+  }
+}

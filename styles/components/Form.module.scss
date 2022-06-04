@@ -1,0 +1,81 @@
+.form {
+  background: linear-gradient(to left, white 50%, $mainColor 50%) right;
+  background-size: 200%;
+  transition: 0.7s;
+  .form-image {
+    padding-top: 150px;
+    padding-bottom: 400px;
+    background-image: url(../../public/FormBg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    form {
+      padding-top: 54px;
+      padding-bottom: 88px;
+      padding-left: 89px;
+      padding-right: 89px;
+      background: rgba(255, 255, 255, 0.2);
+      border: 1px solid #ffffff;
+      backdrop-filter: blur(30px);
+      border-radius: 10px;
+      h2 {
+        @include fontSize(48px, 400, 56.25px, $darkColor);
+        text-align: center;
+      }
+      .form-group {
+        @include flex-box(space-between, center);
+        width: 100%;
+        margin-bottom: 40px;
+        .form-label {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+
+          label {
+            @include fontSize(16px, 400, 18.75px, $darkColor);
+            margin-bottom: 6px;
+            span {
+              color: red;
+            }
+          }
+          input {
+            border: none;
+            outline: none;
+            background: #ffffff;
+            border-radius: 10px;
+            height: 60px;
+            width: 100%;
+          }
+          textarea {
+            resize: none;
+            border: none;
+            outline: none;
+            width: 100%;
+            height: 120px;
+            background: #ffffff;
+            border-radius: 10px;
+          }
+          &:not(:last-child) {
+            margin-right: 20px;
+          }
+        }
+      }
+      button {
+        border: 1px solid #ffffff;
+        border-radius: 10px;
+        background-color: #ffffff;
+        @include fontSize(28px, 400, 32.81px, $mainColor);
+        padding: 13.5px 121px;
+        cursor: pointer;
+        transition: 0.5s;
+        &:hover {
+          background-color: $green;
+
+          color: white;
+        }
+      }
+    }
+  }
+  &:hover {
+    background-position: left;
+  }
+}
