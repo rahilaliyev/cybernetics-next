@@ -10,9 +10,11 @@ header {
     @include flex-box(space-between, center);
     .logo {
       z-index: 3;
+      cursor: pointer;
     }
     nav {
       display: flex;
+      z-index: 3;
       ul {
         display: flex;
         li {

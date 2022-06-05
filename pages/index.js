@@ -46,7 +46,7 @@ export default function Home() {
               <div className="training-test">
                 <h4>Peşəkar mütəxəssis hazırlığı</h4>
                 <p>Peşəkar mütəxəssislərimizin nəzəri və təcrübi biliklərindən faydalanaraq mütəxəssis hazırlığına qoşulun</p>
-                <Link href={"#"}>Ətraflı</Link>
+                <Link href={"/education/preparation"}>Ətraflı</Link>
               </div>
             </div>
             <div className="training-text-image">
@@ -56,7 +56,7 @@ export default function Home() {
                   Müəssəliriniz İT infrastrukturunun təhlüksəzliyinin təmini məqsədilə əməkdaşlarınızı qısa müddətli kibert təhlükəsizlik təlimlərinə
                   cəlb edin
                 </p>
-                <Link href={"#"}>Ətraflı</Link>
+                <Link href={"/education/training"}>Ətraflı</Link>
               </div>
               <div className="training-image">
                 <Image src={TrainingImg2} alt="training" />
@@ -72,7 +72,7 @@ export default function Home() {
                   Cybernetics MMC yerli və xarici universitetlərlə əməkdaşlıq edərəkbakalavr və magistr təhsil səviyyəsində tədrisin təşkili və
                   laboratiyanın qurulmasını həyata keçirir.
                 </p>
-                <Link href={"#"}>Ətraflı</Link>
+                <Link href={"/education/academic-activity"}>Ətraflı</Link>
               </div>
             </div>
           </div>

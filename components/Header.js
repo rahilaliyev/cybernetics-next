@@ -7,9 +7,11 @@ const Header = () => {
   return (
     <header>
       <div className="header-context container">
-        <div className="logo">
-          <Image src={Logo} alt="Logo" />
-        </div>
+        <Link href={"/"}>
+          <div className="logo">
+            <Image src={Logo} alt="Logo" />
+          </div>
+        </Link>
         <nav>
           <ul>
             <li>
@@ -22,7 +24,9 @@ const Header = () => {
               <Link href={"#"}> Sislat </Link>
             </li>
             <li>
-              <Link href={"#"}> Haqqımızda </Link>
+              <Link href={"/about"}>
+                <a>Haqqımızda</a>
+              </Link>
             </li>
             <li>
               <Link href={"#"}> Əlaqə </Link>

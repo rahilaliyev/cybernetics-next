@@ -1,0 +1,27 @@
+.about {
+  padding-top: 190px;
+  h1 {
+    text-align: center;
+    @include fontSize(48px, 500, 56.25px, $darkColor);
+  }
+  .about-container {
+    background-image: url("../../public/aboutBg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 10%;
+    height: 100vh;
+    padding-top: 200px;
+    .paragraph {
+      background: rgba(255, 255, 255, 0.5);
+      backdrop-filter: blur(84px);
+      /* Note: backdrop-filter has minimal browser support */
+
+      border-radius: 10px;
+      padding: 23px 34px;
+      p {
+        @include fontSize(16px, 400, 18.75px, black);
+        text-align: center;
+      }
+    }
+  }
+}
