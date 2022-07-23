@@ -1,46 +1,119 @@
+import Image from "next/image";
 import React from "react";
+import Logo from "../public/logo-about.svg";
+import Card1 from "../public/aboutcard-1.png";
+import Card2 from "../public/aboutcard-2.png";
+import Card3 from "../public/aboutcard-3.png";
+import Card4 from "../public/aboutcard-4.png";
+import Card5 from "../public/aboutcard-5.png";
 
 const About = () => {
   return (
-    <main>
-      <section className="about">
-        <h1>Biz kimik?</h1>
-        <div className="about-container">
-          <div className="container">
-            <div className="paragraph">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis commodo ipsum rhoncus pellentesque quam. Faucibus est mattis nec
-                aliquam aliquam ut. In purus tincidunt arcu felis, quis pharetra sed tortor. Sagittis donec sit erat pulvinar tellus massa aliquet
-                quam quisque. Vehicula posuere quisque aenean dignissim pulvinar vulputate at. At feugiat pretium vitae proin arcu nunc lacus
-                fringilla pellentesque. Amet augue in nulla ut ut commodo, posuere euismod. Nibh diam pulvinar est donec. Nunc eget sit in a
-                pellentesque nullam. Id id est mauris facilisis enim. Augue in arcu, maecenas dictumst at. Nunc libero in ultrices tellus urna dapibus
-                elementum scelerisque. Tortor lacus in leo enim, tristique semper. Mollis sem sapien faucibus diam ultricies libero. Integer urna diam
-                pharetra magna cursus lectus id ligula. Eu dignissim ultricies fringilla dignissim mauris ipsum imperdiet morbi. Aliquam elementum leo
-                euismod commodo tincidunt massa eu netus sed. Commodo auctor ut nulla metus, diam mauris diam. Eget tellus non morbi fermentum
-                facilisis nulla ut amet. Scelerisque tincidunt neque in semper et id nam. Tempor non id habitant quis ullamcorper gravida. Auctor
-                ullamcorper enim arcu rutrum turpis nullam. Amet risus, tincidunt facilisi gravida in sollicitudin arcu. Sem donec vel eros
-                suspendisse in tristique turpis id rhoncus. Enim bibendum urna integer cursus vel nibh integer morbi sapien. Orci vel integer et
-                fermentum. Quis habitant rutrum urna nunc aliquam commodo. Ullamcorper nulla gravida euismod nulla. Iaculis nunc fringilla orci
-                aliquam elementum auctor porttitor. Scelerisque sapien ac congue commodo at imperdiet sagittis. Vitae sit cras sagittis ullamcorper
-                ultrices scelerisque nibh varius. Morbi sagittis condimentum diam morbi ut integer iaculis. Ut in lacus ultrices egestas lacus. Sed
-                tortor, tellus elit id eget lobortis aliquet ac nullam. Ultricies quam augue mauris id dignissim etiam neque. Urna orci duis sed eu
-                tellus. At diam pellentesque urna, vulputate nulla aenean sit neque. Netus malesuada mauris cursus arcu. Neque nibh cras sit augue
-                lacus donec. Tempor vitae volutpat hac at montes, lacus. Vitae quam scelerisque at nunc curabitur placerat tempus nulla. Ac, enim in
-                lectus senectus at lobortis. Turpis iaculis velit, pulvinar sit faucibus urna pharetra. Senectus eget diam arcu commodo gravida auctor
-                in diam. Sit aliquam integer purus luctus. Odio semper mattis etiam amet, odio id. Commodo vel lectus sapien nec nulla cras non. Nibh
-                commodo amet, scelerisque venenatis non quis mi, morbi dictum. Erat tortor in ipsum justo. A neque neque, ut amet. Ornare egestas dui
-                etiam egestas a non. Id euismod adipiscing nisl quis purus nunc sit faucibus. Pellentesque imperdiet amet, est eu in. Risus mi
-                sollicitudin pretium vivamus ipsum. Volutpat velit gravida nibh et nulla non pretium in in. Eget sodales mattis bibendum egestas
-                tellus, sit tellus lectus faucibus. Velit nec platea sagittis, viverra diam ultrices auctor volutpat vitae. Nibh at vitae sodales diam
-                a amet in neque. Eleifend vitae urna tincidunt habitant quisque vel. In ornare ut cursus augue. Sollicitudin pharetra, ac tortor arcu
-                lacinia. Egestas nunc lacus in et. Sit volutpat non, odio vivamus scelerisque amet libero. Aliquet adipiscing at nisi, ullamcorper.
-                Sed dolor, turpis nec potenti risus. Mauris nunc, et neque ultrices sed habitant id. Dignissim nisi nulla dictum orci est, nibh
-                pretium luctus. Pellentesque ullamcorper augue orci neque cursus ut interdum. In praesent proin commodo pellentesque. Molestie
-                adipiscing malesuada nec morbi sapien platea vulputate diam. Leo facilisi ornare amet, gravida enim. Fermentum, in auctor cum nunc sit
-                tincidunt mattis blandit dolor.
-              </p>
+    <main className="about">
+      <section className="logo-about container">
+        <Image src={Logo} alt="Logo" />
+      </section>
+      <section className="about-info">
+        <div className="about-info-container container">
+          <div className="text-information">
+            <h2>Şirkətin təsviri</h2>
+            <p>
+              Cybernetics MMC, 2020-ci ildə qurulub və kiber təhlükəsizlik həllərinin təmini, kiber təhlükəsizlik sektorunda ixtisaslaşdırılmış
+              mütəxəssislərin hazırlanması, korporativ şirkət və qurumlarda təhlükəsizlik xidmətlərinin göstərilməsi, yeni nəsil təhlükəsizlik
+              texnologiyalarının yaradılması, inkişafı, yerli təhlükəsizlik məhsullarının istehsalı, dünya bazarına ixracı eyni zamanda ölkəmizdə
+              Rəqəmsal Ekspertiza (Digital Forensic) sahəsinin formalaşması məqsədini daşıyır. Şirkətimiz “SISLAT” milli brendi ilə şəbəkə və
+              informasiya təklükəsizliyi qurğularını (firewall, hotspot, 2FA və s.) istehsal edir.
+            </p>
+          </div>
+          <div className="text-information">
+            <h2>Şirkətin hədəfləri</h2>
+            <p>
+              Azərbaycan bazarında kiber təhlükəsizlik sahəsində ən etibarlı şirkət olmağı, məhsulların istehsalını yerli və dünya bazarına
+              çıxarılmasını hədəfləyir.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section className="obligation">
+        <div className="obligation-container container">
+          <h2>Şirkətin öhdəlikləri</h2>
+          <p>
+            Cybernetics MMC, Azərbaycan şirkəti olaraq müştərisinin etibarı, məlumat gizliliyi və məmnunluğunu daim prioritet tutaraq fəaliyyət
+            göstərir. Cybernetics MMC, müştəri yönümlü beynəlxalq etibarlı şirkət olmağı hədəfləyir. Bu istiqamətdə aşağıdakı öhdəlikləri daşıyır:
+          </p>
+          <div className="obligation-cards">
+            <div className="card">
+              <div className="card-image">
+                <Image src={Card1} alt="card" />
+              </div>
+              <div className="card-text">
+                <p>Kiber təhlükəsizlik sahəsində qabaqcıl məhsullar və xidmətlər təklif etmək </p>
+              </div>
+            </div>
+            <div className="card">
+              <div className="card-image">
+                <Image src={Card2} alt="card" />
+              </div>
+              <div className="card-text">
+                <p>Müştərilərimiz və biznes tərəfdaşlarımız üçün dürüst və etibarlı xidmət göstərməkt</p>
+              </div>
+            </div>
+            <div className="card">
+              <div className="card-image">
+                <Image src={Card3} alt="card" />
+              </div>
+              <div className="card-text">
+                <p>Müştərilərin ehtiyaclarını nəzərə alaraq, səmimiyyətlə problemləri operativ və effektiv həllini təmin etmək</p>
+              </div>
+            </div>
+            <div className="card">
+              <div className="card-image">
+                <Image src={Card4} alt="card" />
+              </div>
+              <div className="card-text">
+                <p>Davamlı inkişafa açıq yeni məhsul və texnologiyaların yaradılması</p>
+              </div>
+            </div>
+            <div className="card">
+              <div className="card-image">
+                <Image src={Card5} alt="card" />
+              </div>
+              <div className="card-text">
+                <p>Bilik, bacarıq və texnologiyalarımızı bölüşərək informasiya cəmiyyətinə töhfə vermək</p>
+              </div>
             </div>
           </div>
+          <h2>Keyfiyyət siyasəti</h2>
+          <p>Cybernetics şirkətinin prioritet keyfiyyət siyasəti müştəri məmnuniyyətini təmin etməkdir.</p>
+          <ul>
+            <li>İstehsal və xidmət prosesinin yerli və beynəlxalq standartlarına uyğun olaraq həyata keçirmək</li>
+            <li>Əməkdaşların xidmət keyfiyyətinin artırılması məqsədilə mütəmadi təlimlərdə iştirakını təmin etmək</li>
+            <li>
+              Həyata keçirilən işləri davamlı inkişaf etdirmək məqsədilə qabaqcıl texnologiyalardan istifadə edərək operativ və effektiv şəkildə təmin
+              etmək
+            </li>
+            <li>
+              İşin və xidmətlərin davamlılığını təmin etmək üçün lazımi planları hazırlamaq və həyata keçirmək, şirkətin tələb etdiyi standartlara
+              uyğun olaraq audit xidmətini həyata keçirmək
+            </li>
+            <li>Təşkilati yanaşma və keyfiyyətin davamlı olaraq yaxşılaşdırılması məqsədilə innovativ uyğunluşma siyasətini tətbiq etmək</li>
+            <li>Təchizatçılarımıza dəstək olmaq və inkişaf prosesləri və keyfiyyət səviyyələrini artırmaq.</li>
+            <li>Xidmət keyfiyyətimizi müştərilərimizə vaxtında və etibarlı əks etdirmək üçün</li>
+            <li>Ətraf mühitlə ahəngdar işləmək</li>
+            <li>Qanuni və digər şərtlərə uyğun işləmək</li>
+          </ul>
+        </div>
+      </section>
+      <section className="endurance">
+        <div className="endurance-container container">
+          <h2>Şirkətin dayanıqlığı</h2>
+          <p>
+            “Cybernetics” MMC kibertəhlükəsizlik sahəsində ixtisaslaşmış və əsas fəaliyyət istiqaməti olaraq nəzərdə tutulmuş hüquqi şirkətdir.
+            “Cybernetics” MMC ölkədaxili və beynəlxalq kibertəhlükəsizlik şirkətləri ilə əməkdaşlıq edir və maddi texniki bazanın yaradılmasında
+            beynəlxalq təcrübələrə malikdir. Bununla birlikdə şirkətdaxili fəaliyyət göstərən mütəxəssislər də elmi-pedoqoji sahədə yerli və
+            beynəlxalq təcrübələr qazanmışdır. “Cybernetics” MMC-nin yuxarıda göstərilən xüsusiyyətləri şirkət fəaliyyətini dayanıqlı şəkildə həyata
+            keçirəcəyini göstərən meyardır.
+          </p>
         </div>
       </section>
     </main>
