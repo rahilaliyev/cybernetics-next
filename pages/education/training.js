@@ -1,8 +1,11 @@
 import React from "react";
 import EducationHeader from "../../components/EducationHeader";
 import EducationHeaderTop from "../../components/EducationHeaderTop";
-import Form from "../../components/Form";
-import PriceCards from "../../components/PriceCards";
+import Cloud1 from "../../public/cloud1.png";
+import Cloud2 from "../../public/cloud2.png";
+import CloudCard from "../../public/cloud-card.png";
+import Image from "next/image";
+import Link from "next/link";
 
 const Training = () => {
   return (
@@ -18,63 +21,298 @@ const Training = () => {
       />
       <section className="trainingSection">
         <div className="traningSection-context container">
-          <div className="traning-info">
+          <div className="traning-cards">
             <div className="card">
-              <div className="card-header">
-                <h3>Təlim səviyyəsi</h3>
+              <div className="cloud-left">
+                <Image src={Cloud1} alt="Cloud" />
+              </div>
+              <div className="cloud-right">
+                <Image src={Cloud2} alt="Cloud" />
+              </div>
+
+              <div className="card-icon">
+                <Image src={CloudCard} alt="cloud" />
+                <h3>Bulud inzibatçısı</h3>
               </div>
               <div className="card-info">
-                <p>Başlanğıc</p>
+                <div className="left">
+                  <h6>KURSUN MÜDDƏTI</h6>
+                  <span>120 saat, 48 dərs </span>
+                </div>
+                <div className="right">
+                  <h6>KURSUN VAXTI</h6>
+                  <span>həftədə 2 dəfə</span>
+                </div>
               </div>
-            </div>
+              <Link href="#">Ətraflı</Link>
+            </div>{" "}
             <div className="card">
-              <div className="card-header">
-                <h3>Təlim müddəti</h3>
+              <div className="cloud-left">
+                <Image src={Cloud1} alt="Cloud" />
+              </div>
+              <div className="cloud-right">
+                <Image src={Cloud2} alt="Cloud" />
+              </div>
+
+              <div className="card-icon">
+                <Image src={CloudCard} alt="cloud" />
+                <h3>Bulud inzibatçısı</h3>
               </div>
               <div className="card-info">
-                <p>6 ay</p>
+                <div className="left">
+                  <h6>KURSUN MÜDDƏTI</h6>
+                  <span>120 saat, 48 dərs </span>
+                </div>
+                <div className="right">
+                  <h6>KURSUN VAXTI</h6>
+                  <span>həftədə 2 dəfə</span>
+                </div>
               </div>
-            </div>
+              <Link href="#">Ətraflı</Link>
+            </div>{" "}
             <div className="card">
-              <div className="card-header">
-                <h3>İlkin şərtlər</h3>
+              <div className="cloud-left">
+                <Image src={Cloud1} alt="Cloud" />
+              </div>
+              <div className="cloud-right">
+                <Image src={Cloud2} alt="Cloud" />
+              </div>
+
+              <div className="card-icon">
+                <Image src={CloudCard} alt="cloud" />
+                <h3>Bulud inzibatçısı</h3>
               </div>
               <div className="card-info">
-                <p>Şəbəkə biliyi</p>
+                <div className="left">
+                  <h6>KURSUN MÜDDƏTI</h6>
+                  <span>120 saat, 48 dərs </span>
+                </div>
+                <div className="right">
+                  <h6>KURSUN VAXTI</h6>
+                  <span>həftədə 2 dəfə</span>
+                </div>
               </div>
-            </div>
+              <Link href="#">Ətraflı</Link>
+            </div>{" "}
             <div className="card">
-              <div className="card-header">
-                <h3>Sertifikat</h3>
+              <div className="cloud-left">
+                <Image src={Cloud1} alt="Cloud" />
+              </div>
+              <div className="cloud-right">
+                <Image src={Cloud2} alt="Cloud" />
+              </div>
+
+              <div className="card-icon">
+                <Image src={CloudCard} alt="cloud" />
+                <h3>Bulud inzibatçısı</h3>
               </div>
               <div className="card-info">
-                <p>SİSLAT Sertifikatı</p>
+                <div className="left">
+                  <h6>KURSUN MÜDDƏTI</h6>
+                  <span>120 saat, 48 dərs </span>
+                </div>
+                <div className="right">
+                  <h6>KURSUN VAXTI</h6>
+                  <span>həftədə 2 dəfə</span>
+                </div>
               </div>
+              <Link href="#">Ətraflı</Link>
             </div>
-          </div>
-          <div className="training-price">
-            <PriceCards
-              header="Sərfəli"
-              headerText="Dolor scelerisque blandit nascetur bibendum nec."
-              price="$49"
-              info="Dolor scelerisque blandit "
-            />
-            <PriceCards
-              header="Populyar"
-              headerText="Dolor scelerisque blandit nascetur bibendum nec."
-              price="$69"
-              info="Dolor scelerisque blandit "
-            />
-            <PriceCards
-              header="Standart"
-              headerText="Dolor scelerisque blandit nascetur bibendum nec."
-              price="$79"
-              info="Dolor scelerisque blandit "
-            />
+            <div className="card">
+              <div className="cloud-left">
+                <Image src={Cloud1} alt="Cloud" />
+              </div>
+              <div className="cloud-right">
+                <Image src={Cloud2} alt="Cloud" />
+              </div>
+
+              <div className="card-icon">
+                <Image src={CloudCard} alt="cloud" />
+                <h3>Bulud inzibatçısı</h3>
+              </div>
+              <div className="card-info">
+                <div className="left">
+                  <h6>KURSUN MÜDDƏTI</h6>
+                  <span>120 saat, 48 dərs </span>
+                </div>
+                <div className="right">
+                  <h6>KURSUN VAXTI</h6>
+                  <span>həftədə 2 dəfə</span>
+                </div>
+              </div>
+              <Link href="#">Ətraflı</Link>
+            </div>{" "}
+            <div className="card">
+              <div className="cloud-left">
+                <Image src={Cloud1} alt="Cloud" />
+              </div>
+              <div className="cloud-right">
+                <Image src={Cloud2} alt="Cloud" />
+              </div>
+
+              <div className="card-icon">
+                <Image src={CloudCard} alt="cloud" />
+                <h3>Bulud inzibatçısı</h3>
+              </div>
+              <div className="card-info">
+                <div className="left">
+                  <h6>KURSUN MÜDDƏTI</h6>
+                  <span>120 saat, 48 dərs </span>
+                </div>
+                <div className="right">
+                  <h6>KURSUN VAXTI</h6>
+                  <span>həftədə 2 dəfə</span>
+                </div>
+              </div>
+              <Link href="#">Ətraflı</Link>
+            </div>{" "}
+            <div className="card">
+              <div className="cloud-left">
+                <Image src={Cloud1} alt="Cloud" />
+              </div>
+              <div className="cloud-right">
+                <Image src={Cloud2} alt="Cloud" />
+              </div>
+
+              <div className="card-icon">
+                <Image src={CloudCard} alt="cloud" />
+                <h3>Bulud inzibatçısı</h3>
+              </div>
+              <div className="card-info">
+                <div className="left">
+                  <h6>KURSUN MÜDDƏTI</h6>
+                  <span>120 saat, 48 dərs </span>
+                </div>
+                <div className="right">
+                  <h6>KURSUN VAXTI</h6>
+                  <span>həftədə 2 dəfə</span>
+                </div>
+              </div>
+              <Link href="#">Ətraflı</Link>
+            </div>
+            <div className="card">
+              <div className="cloud-left">
+                <Image src={Cloud1} alt="Cloud" />
+              </div>
+              <div className="cloud-right">
+                <Image src={Cloud2} alt="Cloud" />
+              </div>
+
+              <div className="card-icon">
+                <Image src={CloudCard} alt="cloud" />
+                <h3>Bulud inzibatçısı</h3>
+              </div>
+              <div className="card-info">
+                <div className="left">
+                  <h6>KURSUN MÜDDƏTI</h6>
+                  <span>120 saat, 48 dərs </span>
+                </div>
+                <div className="right">
+                  <h6>KURSUN VAXTI</h6>
+                  <span>həftədə 2 dəfə</span>
+                </div>
+              </div>
+              <Link href="#">Ətraflı</Link>
+            </div>{" "}
+            <div className="card">
+              <div className="cloud-left">
+                <Image src={Cloud1} alt="Cloud" />
+              </div>
+              <div className="cloud-right">
+                <Image src={Cloud2} alt="Cloud" />
+              </div>
+
+              <div className="card-icon">
+                <Image src={CloudCard} alt="cloud" />
+                <h3>Bulud inzibatçısı</h3>
+              </div>
+              <div className="card-info">
+                <div className="left">
+                  <h6>KURSUN MÜDDƏTI</h6>
+                  <span>120 saat, 48 dərs </span>
+                </div>
+                <div className="right">
+                  <h6>KURSUN VAXTI</h6>
+                  <span>həftədə 2 dəfə</span>
+                </div>
+              </div>
+              <Link href="#">Ətraflı</Link>
+            </div>{" "}
+            <div className="card">
+              <div className="cloud-left">
+                <Image src={Cloud1} alt="Cloud" />
+              </div>
+              <div className="cloud-right">
+                <Image src={Cloud2} alt="Cloud" />
+              </div>
+
+              <div className="card-icon">
+                <Image src={CloudCard} alt="cloud" />
+                <h3>Bulud inzibatçısı</h3>
+              </div>
+              <div className="card-info">
+                <div className="left">
+                  <h6>KURSUN MÜDDƏTI</h6>
+                  <span>120 saat, 48 dərs </span>
+                </div>
+                <div className="right">
+                  <h6>KURSUN VAXTI</h6>
+                  <span>həftədə 2 dəfə</span>
+                </div>
+              </div>
+              <Link href="#">Ətraflı</Link>
+            </div>
+            <div className="card">
+              <div className="cloud-left">
+                <Image src={Cloud1} alt="Cloud" />
+              </div>
+              <div className="cloud-right">
+                <Image src={Cloud2} alt="Cloud" />
+              </div>
+
+              <div className="card-icon">
+                <Image src={CloudCard} alt="cloud" />
+                <h3>Bulud inzibatçısı</h3>
+              </div>
+              <div className="card-info">
+                <div className="left">
+                  <h6>KURSUN MÜDDƏTI</h6>
+                  <span>120 saat, 48 dərs </span>
+                </div>
+                <div className="right">
+                  <h6>KURSUN VAXTI</h6>
+                  <span>həftədə 2 dəfə</span>
+                </div>
+              </div>
+              <Link href="#">Ətraflı</Link>
+            </div>{" "}
+            <div className="card">
+              <div className="cloud-left">
+                <Image src={Cloud1} alt="Cloud" />
+              </div>
+              <div className="cloud-right">
+                <Image src={Cloud2} alt="Cloud" />
+              </div>
+
+              <div className="card-icon">
+                <Image src={CloudCard} alt="cloud" />
+                <h3>Bulud inzibatçısı</h3>
+              </div>
+              <div className="card-info">
+                <div className="left">
+                  <h6>KURSUN MÜDDƏTI</h6>
+                  <span>120 saat, 48 dərs </span>
+                </div>
+                <div className="right">
+                  <h6>KURSUN VAXTI</h6>
+                  <span>həftədə 2 dəfə</span>
+                </div>
+              </div>
+              <Link href="#">Ətraflı</Link>
+            </div>{" "}
           </div>
         </div>
       </section>
-      <Form />
     </main>
   );
 };
