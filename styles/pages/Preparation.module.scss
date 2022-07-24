@@ -11,7 +11,6 @@
   }
   .preparation-cards {
     margin-bottom: 165px;
-
   }
 }
 
@@ -23,8 +22,138 @@
 }
 
 .academicActivity {
-  background-image: url(../../public/eduBg2.png);
+  background-image: url(../../public/academic-activity.png);
   height: 80vh;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.academicSection {
+  .academic-university {
+    @include flex-box(space-between, center);
+    width: 100%;
+    margin-bottom: 50px;
+    .uni-card {
+      width: 32%;
+      background-color: $mainColor;
+      @include flex-box(center, center);
+      padding: 60px 50px;
+      border-radius: 10px;
+      position: relative;
+      img {
+        transition: 0.2s;
+      }
+      .text-context {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        padding: 30px 0;
+        border-radius: 10px;
+        transform: translateY(-100px);
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.8s;
+        h6 {
+          @include fontSize(16px, 500, 24px, white);
+          text-align: center;
+        }
+        .lists {
+          @include flex-box(space-evenly, center);
+          color: white;
+          ol {
+            li {
+              &:not(:last-child) {
+                margin-bottom: 7px;
+              }
+            }
+          }
+        }
+      }
+      &:hover {
+        background-color: $green;
+        img {
+          transform: scale(1.1);
+        }
+        .text-context {
+          transform: translateY(0);
+          opacity: 1;
+          visibility: visible;
+          background-color: $green;
+        }
+      }
+    }
+  }
+  .academic-winner {
+    background-color: $mainColor;
+    border-radius: 10px;
+    padding: 53px 63px;
+    margin-bottom: 70px;
+    h1 {
+      @include fontSize(36px, 500, 42px, white);
+      margin-bottom: 50px;
+      text-align: center;
+    }
+    .winner-container {
+      position: relative;
+      margin-bottom: 30px;
+      .winner-img {
+        width: 100%;
+        span {
+          width: 100% !important;
+        }
+      }
+      .winner-logo {
+        background: rgba(96, 175, 255, 0.6);
+        backdrop-filter: blur(11px);
+        border-radius: 10px;
+        display: inline;
+        position: absolute;
+        top: 50px;
+        left: -40px;
+        padding-left: 75px;
+        padding-right: 35px;
+        padding-top: 35px;
+        padding-bottom: 30px;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+      }
+    }
+
+    p {
+      @include fontSize(20px, 500, 24px, white);
+      text-align: center;
+    }
+  }
+  .academic-apply {
+    position: relative;
+    width: 100%;
+    @include flex-box(center, center);
+    background: $mainColor;
+    border-radius: 10px;
+    margin-bottom: 100px;
+    padding: 115px 0;
+    .medal {
+      position: absolute;
+      left: 0;
+    }
+    .heat {
+      position: absolute;
+      right: 0;
+    }
+    button {
+      padding: 21px 76.5px;
+      @include fontSize(24px, 500, 28px, white);
+      border: 2px solid #edf3f8;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 10px;
+      color: white;
+      background: linear-gradient(to left, $mainColor 50%, white 50%) right;
+      background-size: 200%;
+      transition: 0.5s ease-out;
+      cursor: pointer;
+      &:hover {
+        background-position: left;
+        color: $mainColor;
+      }
+    }
+  }
 }

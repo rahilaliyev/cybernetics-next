@@ -1,8 +1,12 @@
+import Image from "next/image";
 import React from "react";
 import EducationHeader from "../../components/EducationHeader";
 import EducationHeaderTop from "../../components/EducationHeaderTop";
-import Form from "../../components/Form";
-import PriceCards from "../../components/PriceCards";
+import OxfordLogo from "../../public/oxford-logo.png";
+import Bmu from "../../public/Bmu.png";
+import BmuLogo from "../../public/bmu-logo.png";
+import Medal from "../../public/medal.svg";
+import Heat from "../../public/academic-heat-svg.svg";
 
 const AcademicActivity = () => {
   return (
@@ -18,29 +22,95 @@ const AcademicActivity = () => {
       />
       <section className="academicSection">
         <div className="academicSection-context container">
-          <div className="academic-price">
-            <PriceCards
-              header="Sərfəli"
-              headerText="Dolor scelerisque blandit nascetur bibendum nec."
-              price="$49"
-              info="Dolor scelerisque blandit "
-            />
-            <PriceCards
-              header="Populyar"
-              headerText="Dolor scelerisque blandit nascetur bibendum nec."
-              price="$69"
-              info="Dolor scelerisque blandit "
-            />
-            <PriceCards
-              header="Standart"
-              headerText="Dolor scelerisque blandit nascetur bibendum nec."
-              price="$79"
-              info="Dolor scelerisque blandit "
-            />
+          <div className="academic-university">
+            <div className="uni-card">
+              <Image src={OxfordLogo} alt="Logo" />
+              <div className="text-context">
+                <h6>Təlimlər</h6>
+                <div className="lists">
+                  <ol>
+                    <li>Photoshop</li>
+                    <li>Illustrator</li>
+                    <li>Autocad</li>
+                    <li>3ds Max</li>
+                  </ol>
+                  <ol>
+                    <li>Photoshop</li>
+                    <li>Illustrator</li>
+                    <li>Autocad</li>
+                    <li>3ds Max</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+            <div className="uni-card">
+              <Image src={OxfordLogo} alt="Logo" />
+              <div className="text-context">
+                <h6>Təlimlər</h6>
+                <div className="lists">
+                  <ol>
+                    <li>Photoshop</li>
+                    <li>Illustrator</li>
+                    <li>Autocad</li>
+                    <li>3ds Max</li>
+                  </ol>
+                  <ol>
+                    <li>Photoshop</li>
+                    <li>Illustrator</li>
+                    <li>Autocad</li>
+                    <li>3ds Max</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+            <div className="uni-card">
+              <Image src={OxfordLogo} alt="Logo" />
+              <div className="text-context">
+                <h6>Təlimlər</h6>
+                <div className="lists">
+                  <ol>
+                    <li>Photoshop</li>
+                    <li>Illustrator</li>
+                    <li>Autocad</li>
+                    <li>3ds Max</li>
+                  </ol>
+                  <ol>
+                    <li>Photoshop</li>
+                    <li>Illustrator</li>
+                    <li>Autocad</li>
+                    <li>3ds Max</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="academic-winner">
+            <h1>BMU Qrant Qalibi</h1>
+            <div className="winner-container">
+              <div className="winner-img">
+                <Image src={Bmu} alt="Bmu" />
+              </div>
+              <div className="winner-logo">
+                <Image src={BmuLogo} alt="logo" />
+              </div>
+            </div>
+            <p>
+              Ali təhsilin bütün səviyyələri üzrə mühəndis kadrlarının hazırlığını, fundamental və tətbiqi elmi tədqiqatlar aparan qabaqcıl ali təhsil
+              müəssisəsidir
+            </p>
+          </div>
+          <div className="academic-apply">
+            <div className="medal">
+              <Image src={Medal} alt="medal" />
+            </div>
+            <div className="heat">
+              <Image src={Heat} alt="heat" />
+            </div>
+            <button type="button">Təlim üçün müraciət et </button>
           </div>
         </div>
       </section>
-      <Form />
+      {/* <Form /> */}
     </main>
   );
 };
