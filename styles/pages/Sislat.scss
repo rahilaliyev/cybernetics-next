@@ -1,0 +1,116 @@
+.sislat-index {
+  .sislat-container {
+    .sislat-logo {
+      @include flex-box(center, center);
+      padding-top: 200px;
+      padding-bottom: 120px;
+    }
+  }
+}
+.sislat-text {
+  background: $green url("../../public/sislat-bg-image.png");
+  .sislat-text-container {
+    text-align: center;
+    padding: 40px 0;
+    h3 {
+      @include fontSize(24px, 500, 28px, white);
+      margin: 6px 0;
+    }
+    p {
+      @include fontSize(16px, 400, 18px, white);
+      margin-top: 25px;
+    }
+  }
+}
+
+.sislat-index-wall,
+.sislat-index-hotspot,
+.sislat-index-coslat {
+  padding-top: 110px;
+  padding-bottom: 110px;
+  .sislat-index-wall-container,
+  .sislat-index-hotspot-container,
+  .sislat-index-coslat-container {
+    display: flex;
+    .left,
+    .right {
+      width: 50%;
+      h3 {
+        @include fontSize(32px, 500, 38px, $buttonColorBlue);
+        margin-bottom: 10px;
+      }
+      p {
+        @include fontSize(18px, 400, 21px, $buttonColorBlue);
+        margin-bottom: 30px;
+        width: 80%;
+      }
+      ul {
+        position: relative;
+        li {
+          @include fontSize(16px, 400, 18.75px, #000000);
+          margin-left: 25px;
+          display: flex;
+          align-items: center;
+          &:not(:last-child) {
+            margin-bottom: 11px;
+          }
+          &::before {
+            content: "";
+            width: 20px;
+            height: 20px;
+            background-image: url("../../public/ok-icon.svg");
+            position: absolute;
+            left: 0;
+          }
+        }
+      }
+    }
+  }
+}
+.sislat-index-wall,
+.sislat-index-coslat {
+  .sislat-index-wall-container,
+  .sislat-index-coslat-container {
+    .right {
+      @include flex-box(center, center);
+    }
+  }
+}
+
+.sislat-index-hotspot,
+.sislat-index-cards {
+  background-color: #e0e8f0;
+}
+
+.sislat-index-cards {
+  padding-top: 100px;
+  padding-bottom: 65px;
+  .sislat-index-cards-container {
+    @include flex-box(space-between, center);
+    flex-wrap: wrap;
+    .sislat-card {
+      @include flex-box(space-between, center);
+      flex-direction: column;
+      background-color: $mainColor;
+      width: 245px;
+      height: 300px;
+      border-radius: 10px;
+      padding: 34px 20px 24px 20px;
+      text-align: center;
+      h4 {
+        @include fontSize(16px, 700, 18.75px, white);
+        margin-bottom: 18px;
+      }
+      p {
+        @include fontSize(16px, 400, 18.75px, white);
+      }
+      a {
+        @include fontSize(14px, 400, 16px, $mainColor);
+        background-color: white;
+        border-radius: 8px;
+        width: 100%;
+        padding: 13px 0;
+      }
+    }
+  }
+}

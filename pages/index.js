@@ -1,7 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import styles from "../styles/pages/Home.module.scss";
 import MainImage from "../public/mainPageMainImage.png";
 import TrainingImg from "../public/telim1.png";
 import TrainingImg2 from "../public/telimBg-2.png";
@@ -31,8 +30,8 @@ export default function Home() {
             <div className="main-section-text">
               <h2>Kibertəhlükəsizlik səviyyəsini dünya miqyasında zirvələrə daşıyacayıq.</h2>
               <div className="text-button">
-                <Link href={"#"}>Ətraflı</Link>
-              </div>{" "}
+                <Link href={"/about"}>Ətraflı</Link>
+              </div>
             </div>
           </div>
         </section>
@@ -139,7 +138,7 @@ export default function Home() {
               Cybernetics MMC bütün kibertəhlükəsizlik avadanlıqlarını və məhsullarını milliləşdirməyi hədəfləyən bir şirkətdir ki, Sislat brendi bu
               məhsullardan ilkidir.
             </p>
-            <Link href={"#"}>Ətraflı</Link>
+            <Link href={"/sislat"}>Ətraflı</Link>
           </div>
         </section>
         <section className="sislat-cards">
