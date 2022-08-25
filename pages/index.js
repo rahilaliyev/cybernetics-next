@@ -97,7 +97,7 @@ export default function Home() {
                   Müəssinizdə nüfuzetmə testini həyata keçirərək kiber hücumlarla bağlı risk göstəricilərini əks etirən hesabat və təklifləri təqim
                   edirik.
                 </p>
-                <Link href={"#"}>Ətraflı</Link>
+                <Link href={"/services/penetrationTesting"}>Ətraflı</Link>
               </div>
               <div className="line-wrapper">
                 {" "}

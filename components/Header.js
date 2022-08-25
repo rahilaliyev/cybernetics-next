@@ -1,11 +1,19 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Logo from "../public/LogoWhite.svg";
 import Link from "next/link";
 
 const Header = () => {
+  const [scrollPosition, setScrollPosition] = useState(0);
+  useEffect(() => {
+    const updatePosition = () => {
+      setScrollPosition(window.pageYOffset);
+    };
+    window.addEventListener("scroll", updatePosition);
+  }, []);
+
   return (
-    <header>
+    <header className={scrollPosition > 200 ? "header-fixed" : scrollPosition > 100 ? "header-top" : "header-absolute"}>
       <div className="header-context container">
         <Link href={"/"}>
           <div className="logo">

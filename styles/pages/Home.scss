@@ -32,6 +32,10 @@
           @include fontSize(18px, 700, 21.94px, white);
           text-align: center;
           font-family: $Montserrat;
+          &:hover {
+            background-color: white;
+            color: $mainColor;
+          }
         }
       }
     }
@@ -72,6 +76,9 @@
           font-family: $Montserrat;
           background: #60afff;
           border-radius: 10px;
+          &:hover {
+            background-color: #407dba;
+          }
         }
       }
     }
@@ -148,6 +155,10 @@
           @include fontSize(18px, 700, 21.94px, white);
           text-align: center;
           font-family: $Montserrat;
+          &:hover {
+            background-color: white;
+            color: $mainColor;
+          }
         }
       }
     }
