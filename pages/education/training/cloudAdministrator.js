@@ -120,8 +120,8 @@ const CloudAdministrator = () => {
             </div>
           </div>
         </div>
-      </section>
-      <Form /> */}
+      </section> */}
+      <Form />
     </main>
   );
 };
