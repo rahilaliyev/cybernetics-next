@@ -1,9 +1,9 @@
 import React from "react";
-import EducationHeader from "../../components/EducationHeader";
-import EducationHeaderTop from "../../components/EducationHeaderTop";
-import Cloud1 from "../../public/cloud1.png";
-import Cloud2 from "../../public/cloud2.png";
-import CloudCard from "../../public/cloud-card.png";
+import EducationHeader from "../../../components/EducationHeader";
+import EducationHeaderTop from "../../../components/EducationHeaderTop";
+import Cloud1 from "../../../public/cloud1.png";
+import Cloud2 from "../../../public/cloud2.png";
+import CloudCard from "../../../public/cloud-card.png";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -44,7 +44,7 @@ const Training = () => {
                   <span>həftədə 2 dəfə</span>
                 </div>
               </div>
-              <Link href="#">Ətraflı</Link>
+              <Link href="/education/training/cloudAdministrator">Ətraflı</Link>
             </div>{" "}
             <div className="card">
               <div className="cloud-left">
@@ -68,7 +68,7 @@ const Training = () => {
                   <span>həftədə 2 dəfə</span>
                 </div>
               </div>
-              <Link href="#">Ətraflı</Link>
+              <Link href="/education/training/cloudAdministrator">Ətraflı</Link>
             </div>{" "}
             <div className="card">
               <div className="cloud-left">
@@ -92,7 +92,7 @@ const Training = () => {
                   <span>həftədə 2 dəfə</span>
                 </div>
               </div>
-              <Link href="#">Ətraflı</Link>
+              <Link href="/education/training/cloudAdministrator">Ətraflı</Link>
             </div>{" "}
             <div className="card">
               <div className="cloud-left">
@@ -116,7 +116,7 @@ const Training = () => {
                   <span>həftədə 2 dəfə</span>
                 </div>
               </div>
-              <Link href="#">Ətraflı</Link>
+              <Link href="/education/training/cloudAdministrator">Ətraflı</Link>
             </div>
             <div className="card">
               <div className="cloud-left">
@@ -140,7 +140,7 @@ const Training = () => {
                   <span>həftədə 2 dəfə</span>
                 </div>
               </div>
-              <Link href="#">Ətraflı</Link>
+              <Link href="/education/training/cloudAdministrator">Ətraflı</Link>
             </div>{" "}
             <div className="card">
               <div className="cloud-left">
@@ -164,7 +164,7 @@ const Training = () => {
                   <span>həftədə 2 dəfə</span>
                 </div>
               </div>
-              <Link href="#">Ətraflı</Link>
+              <Link href="/education/training/cloudAdministrator">Ətraflı</Link>
             </div>{" "}
             <div className="card">
               <div className="cloud-left">
@@ -188,7 +188,7 @@ const Training = () => {
                   <span>həftədə 2 dəfə</span>
                 </div>
               </div>
-              <Link href="#">Ətraflı</Link>
+              <Link href="/education/training/cloudAdministrator">Ətraflı</Link>
             </div>
             <div className="card">
               <div className="cloud-left">
@@ -212,7 +212,7 @@ const Training = () => {
                   <span>həftədə 2 dəfə</span>
                 </div>
               </div>
-              <Link href="#">Ətraflı</Link>
+              <Link href="/education/training/cloudAdministrator">Ətraflı</Link>
             </div>{" "}
             <div className="card">
               <div className="cloud-left">
@@ -236,7 +236,7 @@ const Training = () => {
                   <span>həftədə 2 dəfə</span>
                 </div>
               </div>
-              <Link href="#">Ətraflı</Link>
+              <Link href="/education/training/cloudAdministrator">Ətraflı</Link>
             </div>{" "}
             <div className="card">
               <div className="cloud-left">
@@ -260,7 +260,7 @@ const Training = () => {
                   <span>həftədə 2 dəfə</span>
                 </div>
               </div>
-              <Link href="#">Ətraflı</Link>
+              <Link href="/education/training/cloudAdministrator">Ətraflı</Link>
             </div>
             <div className="card">
               <div className="cloud-left">
@@ -284,7 +284,7 @@ const Training = () => {
                   <span>həftədə 2 dəfə</span>
                 </div>
               </div>
-              <Link href="#">Ətraflı</Link>
+              <Link href="/education/training/cloudAdministrator">Ətraflı</Link>
             </div>{" "}
             <div className="card">
               <div className="cloud-left">
@@ -308,7 +308,7 @@ const Training = () => {
                   <span>həftədə 2 dəfə</span>
                 </div>
               </div>
-              <Link href="#">Ətraflı</Link>
+              <Link href="/education/training/cloudAdministrator">Ətraflı</Link>
             </div>{" "}
           </div>
         </div>
