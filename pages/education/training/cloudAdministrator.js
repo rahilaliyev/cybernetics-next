@@ -11,7 +11,7 @@ import Form from "../../../components/Form";
 const CloudAdministrator = () => {
   return (
     <main>
-      {/* <section className="trainingDetail">
+      <section className="trainingDetail">
         <div className="trainingDetail-container container">
           <div className="trainingDetail-header">
             <div className="left">
@@ -120,7 +120,7 @@ const CloudAdministrator = () => {
             </div>
           </div>
         </div>
-      </section> */}
+      </section>
       <Form />
     </main>
   );
