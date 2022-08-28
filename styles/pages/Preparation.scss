@@ -4,6 +4,7 @@
     height: 80vh;
     background-repeat: no-repeat;
     background-size: cover;
+    @include flex-box(flex-end, center);
   }
   .preparation-line {
     height: 83px;

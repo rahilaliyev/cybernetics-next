@@ -1,11 +1,11 @@
 import React from "react";
-import EducationHeader from "../../components/EducationHeader";
-import EducationHeaderTop from "../../components/EducationHeaderTop";
-import PreparationCards from "../../components/PreparationCards";
-import CodePng from "../../public/code.png";
-import ConnectPng from "../../public/connect.png";
-import DigitalPng from "../../public/digital.png";
-import CyberPng from "../../public/cyber.png";
+import EducationHeader from "../../../components/EducationHeader";
+import EducationHeaderTop from "../../../components/EducationHeaderTop";
+import PreparationCards from "../../../components/PreparationCards";
+import CodePng from "../../../public/code.png";
+import ConnectPng from "../../../public/connect.png";
+import DigitalPng from "../../../public/digital.png";
+import CyberPng from "../../../public/cyber.png";
 
 const Preparation = () => {
   return (
@@ -27,6 +27,7 @@ const Preparation = () => {
           subHeader={"Web Proqramlaşdırma"}
           description={"Consectetur nunc tincidunt pretium facilisi blandit commodo, sit cursus purus.  "}
           className="card"
+          link={"/education/preparation/web-programming"}
         />
         <PreparationCards
           imageSrc={ConnectPng}
@@ -34,6 +35,7 @@ const Preparation = () => {
           subHeader={"Web Proqramlaşdırma"}
           description={"Consectetur nunc tincidunt pretium facilisi blandit commodo, sit cursus purus.  "}
           className="card-reverse"
+          link={"#"}
         />
         <PreparationCards
           imageSrc={DigitalPng}
@@ -41,6 +43,7 @@ const Preparation = () => {
           subHeader={"Web Proqramlaşdırma"}
           description={"Consectetur nunc tincidunt pretium facilisi blandit commodo, sit cursus purus.  "}
           className="card"
+          link={"#"}
         />
         <PreparationCards
           imageSrc={CyberPng}
@@ -48,6 +51,7 @@ const Preparation = () => {
           subHeader={"Web Proqramlaşdırma"}
           description={"Consectetur nunc tincidunt pretium facilisi blandit commodo, sit cursus purus.  "}
           className="card-reverse"
+          link={"#"}
         />
       </section>
     </main>

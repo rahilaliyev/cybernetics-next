@@ -1,11 +1,21 @@
 import React from "react";
 
 const Form = () => {
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const formData = {};
+    Array.from(e.currentTarget.elements).forEach((field) => {
+      if (!field.name) return;
+      formData[field.name] = field.value;
+    });
+    console.log(formData);
+  };
+
   return (
     <section className="form">
       <div className="form-image">
         <div className="form-context container">
-          <form>
+          <form onSubmit={handleSubmit}>
             <h2>Kursa yazıl</h2>
             <div className="form-group">
               <div className="form-label">
