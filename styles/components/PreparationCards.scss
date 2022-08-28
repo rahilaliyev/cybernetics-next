@@ -30,6 +30,10 @@
       width: 350px;
       .card-header-active {
         margin-bottom: 16px;
+        position: relative;
+        &::before {
+          background-color: $mainColor !important;
+        }
       }
       .card-header {
         position: relative;
@@ -39,7 +43,7 @@
           width: 5px;
           height: 100%;
           position: absolute;
-          background-color: $mainColor;
+          background-color: $grey;
           border-radius: 1px;
         }
 
