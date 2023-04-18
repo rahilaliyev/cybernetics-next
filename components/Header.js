@@ -13,7 +13,11 @@ const Header = () => {
   }, []);
 
   return (
-    <header className={scrollPosition > 200 ? "header-fixed" : scrollPosition > 100 ? "header-top" : "header-absolute"}>
+    <header
+      className={
+        scrollPosition > 200 ? "header-fixed" : scrollPosition > 100 ? "header-top" : "header-absolute"
+      }
+    >
       <div className="header-context container">
         <Link href={"/"}>
           <div className="logo">
@@ -24,12 +28,34 @@ const Header = () => {
           <ul>
             <li>
               <Link href={"#"}> Təlim-Tədris </Link>
+              <ul className="dropdown">
+                <li>
+                  <Link href="/education/preparation">Peşəkar mütəxəssis hazırlığı</Link>
+                </li>
+                <li>
+                  <Link href="/education/training">Korporativ təlimlər</Link>
+                </li>
+                <li>
+                  <Link href="/education/academic-activity">Akademik fəaliyyət</Link>
+                </li>
+              </ul>
             </li>
             <li>
               <Link href={"#"}> Xidmətlər </Link>
             </li>
             <li>
-              <Link href={"#"}> Sislat </Link>
+              <Link href="/sislat"> Sislat </Link>
+              <ul className="dropdown">
+                <li>
+                  <Link href="/si/preparation">Peşəkar mütəxəssis hazırlığı</Link>
+                </li>
+                <li>
+                  <Link href="/education/training">Korporativ təlimlər</Link>
+                </li>
+                <li>
+                  <Link href="/education/academic-activity">Akademik fəaliyyət</Link>
+                </li>
+              </ul>
             </li>
             <li>
               <Link href={"/about"}>
