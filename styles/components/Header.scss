@@ -67,8 +67,39 @@ header {
         border-radius: 8px;
         padding: 4px 9px;
         @include flex-box(center, center);
+        position: relative;
         span {
+          cursor: default;
           @include fontSize(14px, 500, 24px, white);
+        }
+        .dropdown {
+          position: absolute;
+          bottom: -90px;
+          border: 1px solid #60afff;
+          border-radius: 12px;
+          background-color: white;
+          overflow: hidden;
+          z-index: -11;
+          visibility: hidden;
+          opacity: 0;
+
+          button {
+            display: block;
+            cursor: pointer;
+            padding: 4px 9px;
+            @include fontSize(16p, 500, 20px, #60afff);
+            &:hover {
+              background-color: #60afff;
+              color: white;
+            }
+          }
+        }
+        &:hover {
+          .dropdown {
+            z-index: 11;
+            opacity: 1;
+            visibility: visible;
+          }
         }
       }
     }

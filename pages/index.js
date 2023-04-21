@@ -12,8 +12,16 @@ import SislatLogo from "../public/SislatLogo.png";
 import Sislat1 from "../public/sislat1.png";
 import Sislat2 from "../public/sislat2.png";
 import Sislat3 from "../public/sislat3.png";
+import { useRouter } from "next/router";
+import { az } from "../locales/az";
+import { en } from "../locales/en";
+import { ru } from "../locales/ru";
 
 export default function Home() {
+  const router = useRouter();
+  const { locale } = router;
+  const t = locale === "az" ? az : locale === "en" ? en : ru;
+
   return (
     <>
       <Head>
@@ -28,7 +36,7 @@ export default function Home() {
               <Image src={MainImage} alt="Main Page" />
             </div>
             <div className="main-section-text">
-              <h2>Kibertəhlükəsizlik səviyyəsini dünya miqyasında zirvələrə daşıyacayıq.</h2>
+              <h2>{t.firstText}</h2>
               <div className="text-button">
                 <Link href={"/about"}>Ətraflı</Link>
               </div>
@@ -44,7 +52,10 @@ export default function Home() {
               </div>
               <div className="training-test">
                 <h4>Peşəkar mütəxəssis hazırlığı</h4>
-                <p>Peşəkar mütəxəssislərimizin nəzəri və təcrübi biliklərindən faydalanaraq mütəxəssis hazırlığına qoşulun</p>
+                <p>
+                  Peşəkar mütəxəssislərimizin nəzəri və təcrübi biliklərindən faydalanaraq mütəxəssis
+                  hazırlığına qoşulun
+                </p>
                 <Link href={"/education/preparation"}>Ətraflı</Link>
               </div>
             </div>
@@ -52,8 +63,8 @@ export default function Home() {
               <div className="training-test">
                 <h4>Korporativ Təlimlər</h4>
                 <p>
-                  Müəssəliriniz İT infrastrukturunun təhlüksəzliyinin təmini məqsədilə əməkdaşlarınızı qısa müddətli kibert təhlükəsizlik təlimlərinə
-                  cəlb edin
+                  Müəssəliriniz İT infrastrukturunun təhlüksəzliyinin təmini məqsədilə əməkdaşlarınızı qısa
+                  müddətli kibert təhlükəsizlik təlimlərinə cəlb edin
                 </p>
                 <Link href={"/education/training"}>Ətraflı</Link>
               </div>
@@ -68,8 +79,8 @@ export default function Home() {
               <div className="training-test">
                 <h4>Akademik fəaliyyət</h4>
                 <p>
-                  Cybernetics MMC yerli və xarici universitetlərlə əməkdaşlıq edərəkbakalavr və magistr təhsil səviyyəsində tədrisin təşkili və
-                  laboratiyanın qurulmasını həyata keçirir.
+                  Cybernetics MMC yerli və xarici universitetlərlə əməkdaşlıq edərəkbakalavr və magistr təhsil
+                  səviyyəsində tədrisin təşkili və laboratiyanın qurulmasını həyata keçirir.
                 </p>
                 <Link href={"/education/academic-activity"}>Ətraflı</Link>
               </div>
@@ -81,8 +92,8 @@ export default function Home() {
             <div className="services-text">
               <h1>Xidmətlər</h1>
               <p>
-                Cybernetics MMC dövlət qurumlarına və korporativ müəssisələrə bir neçə istiqamətlərdə kibertəhlükəsizlik həllərinin təmini məqsədilə
-                xidmətlər təklif edir
+                Cybernetics MMC dövlət qurumlarına və korporativ müəssisələrə bir neçə istiqamətlərdə
+                kibertəhlükəsizlik həllərinin təmini məqsədilə xidmətlər təklif edir
               </p>
             </div>
           </div>
@@ -94,8 +105,8 @@ export default function Home() {
                   <Image src={ServicesCard1} alt={"Service"} />
                 </div>
                 <p>
-                  Müəssinizdə nüfuzetmə testini həyata keçirərək kiber hücumlarla bağlı risk göstəricilərini əks etirən hesabat və təklifləri təqim
-                  edirik.
+                  Müəssinizdə nüfuzetmə testini həyata keçirərək kiber hücumlarla bağlı risk göstəricilərini
+                  əks etirən hesabat və təklifləri təqim edirik.
                 </p>
                 <Link href={"/services/penetration-testing"}>Ətraflı</Link>
               </div>
@@ -108,7 +119,10 @@ export default function Home() {
                 <div className="services-image">
                   <Image src={ServicesCard2} alt={"Service"} />
                 </div>
-                <p>Müəssini İT və şəbəkə infrastrukturunu yeni və ya formalaşdırmaq istəyirsinizmi? O zaman bizə müraciət edə bilərsiniz.</p>
+                <p>
+                  Müəssini İT və şəbəkə infrastrukturunu yeni və ya formalaşdırmaq istəyirsinizmi? O zaman
+                  bizə müraciət edə bilərsiniz.
+                </p>
                 <Link href={"#"}>Ətraflı</Link>
               </div>
               <div className="line-wrapper">
@@ -121,8 +135,9 @@ export default function Home() {
                   <Image src={ServicesCard3} alt={"Service"} />
                 </div>
                 <p>
-                  Müəssisənizdə yaranan İT problemlərinin mütəxəssislər tərəfində həllini və bu problemlərə qarşı nəzarət edəcək mütəxəssislərə
-                  ehtiyacınız varsa Cybernetics MMC-ə müraciət edə bilərsiniz.
+                  Müəssisənizdə yaranan İT problemlərinin mütəxəssislər tərəfində həllini və bu problemlərə
+                  qarşı nəzarət edəcək mütəxəssislərə ehtiyacınız varsa Cybernetics MMC-ə müraciət edə
+                  bilərsiniz.
                 </p>
                 <Link href={"#"}>Ətraflı</Link>
               </div>
@@ -135,8 +150,8 @@ export default function Home() {
               <Image src={SislatLogo} alt="SislatLogo" />
             </div>{" "}
             <p>
-              Cybernetics MMC bütün kibertəhlükəsizlik avadanlıqlarını və məhsullarını milliləşdirməyi hədəfləyən bir şirkətdir ki, Sislat brendi bu
-              məhsullardan ilkidir.
+              Cybernetics MMC bütün kibertəhlükəsizlik avadanlıqlarını və məhsullarını milliləşdirməyi
+              hədəfləyən bir şirkətdir ki, Sislat brendi bu məhsullardan ilkidir.
             </p>
             <Link href={"/sislat"}>Ətraflı</Link>
           </div>
@@ -178,7 +193,10 @@ export default function Home() {
               </div>
               <div className="card-text">
                 {" "}
-                <p> VPN qoşulmar üçün sms və ya google autoidentifikator ilə 2-ci təsdiqləmə həyata keçirir.</p>
+                <p>
+                  {" "}
+                  VPN qoşulmar üçün sms və ya google autoidentifikator ilə 2-ci təsdiqləmə həyata keçirir.
+                </p>
               </div>{" "}
               <Link href={"#"}>Ətraflı</Link>
             </div>

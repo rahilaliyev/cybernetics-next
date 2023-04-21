@@ -2,9 +2,17 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Logo from "../public/LogoWhite.svg";
 import Link from "next/link";
+import { useRouter } from "next/router";
+import { az } from "../locales/az";
+import { en } from "../locales/en";
+import { ru } from "../locales/ru";
 
 const Header = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
+  const router = useRouter();
+  const { locale } = router;
+  const t = locale === "az" ? az : locale === "en" ? en : ru;
+
   useEffect(() => {
     const updatePosition = () => {
       setScrollPosition(window.pageYOffset);
@@ -12,6 +20,9 @@ const Header = () => {
     window.addEventListener("scroll", updatePosition);
   }, []);
 
+  function handleChangeLanguage(locale) {
+    router.push(router.pathname, router.pathname, { locale });
+  }
   return (
     <header
       className={
@@ -59,15 +70,22 @@ const Header = () => {
             </li>
             <li>
               <Link href={"/about"}>
-                <a>Haqqımızda</a>
+                <a>{t.about} </a>
               </Link>
             </li>
             <li>
-              <Link href={"#"}> Əlaqə </Link>
+              <Link href={"#"}>
+                <a> {t.contact} </a>
+              </Link>
             </li>
           </ul>
           <div className="language">
-            <span>AZ</span>
+            <span>{locale.toUpperCase()}</span>
+            <div className="dropdown">
+              <button onClick={() => handleChangeLanguage("az")}>AZ</button>
+              <button onClick={() => handleChangeLanguage("en")}>EN</button>
+              <button onClick={() => handleChangeLanguage("ru")}>RU</button>
+            </div>
           </div>
         </nav>
       </div>
