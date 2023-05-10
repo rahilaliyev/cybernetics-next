@@ -1,6 +1,12 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
+import { Swiper, SwiperSlide } from "swiper/react";
+import SwiperCore, { Autoplay, Navigation, Loop } from "swiper";
+
+import "swiper/css";
+import "swiper/css/navigation";
+
 import MainImage from "../public/mainPageMainImage.png";
 import TrainingImg from "../public/telim1.png";
 import TrainingImg2 from "../public/telimBg-2.png";
@@ -17,6 +23,7 @@ import { az } from "../locales/az";
 import { en } from "../locales/en";
 import { ru } from "../locales/ru";
 
+SwiperCore.use([Autoplay, Loop]);
 export default function Home() {
   const router = useRouter();
   const { locale } = router;
@@ -99,48 +106,76 @@ export default function Home() {
           </div>
           <div className="services-bottom">
             <div className="services-bottom-context container">
-              <div className="card">
-                <h4>Nüfuzetmə testi</h4>
-                <div className="services-image">
-                  <Image src={ServicesCard1} alt={"Service"} />
-                </div>
-                <p>
-                  Müəssinizdə nüfuzetmə testini həyata keçirərək kiber hücumlarla bağlı risk göstəricilərini
-                  əks etirən hesabat və təklifləri təqim edirik.
-                </p>
-                <Link href={"/services/penetration-testing"}>Ətraflı</Link>
+              <div className="services-content">
+                <Swiper
+                  spaceBetween={50}
+                  slidesPerView={3}
+                  loop={true}
+                  navigation={true}
+                  autoplay={{
+                    delay: 1000,
+                    disableOnInteraction: false,
+                  }}
+                  modules={[Navigation]}
+                >
+                  <SwiperSlide>
+                    <div className="card">
+                      <h4>Nüfuzetmə testi</h4>
+                      <div className="services-image">
+                        <Image src={ServicesCard1} alt={"Service"} />
+                      </div>
+                      <p>
+                        Müəssinizdə nüfuzetmə testini həyata keçirərək kiber hücumlarla bağlı risk
+                        göstəricilərini əks etirən hesabat və təklifləri təqim edirik.
+                      </p>
+                    </div>
+                  </SwiperSlide>
+
+                  <SwiperSlide>
+                    {" "}
+                    <div className="card">
+                      <h4>Şəbəkə arxitekturası</h4>
+                      <div className="services-image">
+                        <Image src={ServicesCard2} alt={"Service"} />
+                      </div>
+                      <p>
+                        Müəssini İT və şəbəkə infrastrukturunu yeni və ya formalaşdırmaq istəyirsinizmi? O
+                        zaman bizə müraciət edə bilərsiniz.
+                      </p>
+                    </div>
+                  </SwiperSlide>
+
+                  <SwiperSlide>
+                    {" "}
+                    <div className="card">
+                      <h4>İT dəstək</h4>
+                      <div className="services-image">
+                        <Image src={ServicesCard3} alt={"Service"} />
+                      </div>
+                      <p>
+                        Müəssisənizdə yaranan İT problemlərinin mütəxəssislər tərəfində həllini və bu
+                        problemlərə qarşı nəzarət edəcək mütəxəssislərə ehtiyacınız varsa Cybernetics MMC-ə
+                        müraciət edə bilərsiniz.
+                      </p>
+                    </div>
+                  </SwiperSlide>
+                  {/* <SwiperSlide>
+                    {" "}
+                    <div className="card">
+                      <h4>İT dəstək</h4>
+                      <div className="services-image">
+                        <Image src={ServicesCard3} alt={"Service"} />
+                      </div>
+                      <p>
+                        Müəssisənizdə yaranan İT problemlərinin mütəxəssislər tərəfində həllini və bu
+                        problemlərə qarşı nəzarət edəcək mütəxəssislərə ehtiyacınız varsa Cybernetics MMC-ə
+                        müraciət edə bilərsiniz.
+                      </p>
+                    </div>
+                  </SwiperSlide> */}
+                </Swiper>
               </div>
-              <div className="line-wrapper">
-                {" "}
-                <div className="line"></div>{" "}
-              </div>
-              <div className="card">
-                <h4>Şəbəkə arxitekturası</h4>
-                <div className="services-image">
-                  <Image src={ServicesCard2} alt={"Service"} />
-                </div>
-                <p>
-                  Müəssini İT və şəbəkə infrastrukturunu yeni və ya formalaşdırmaq istəyirsinizmi? O zaman
-                  bizə müraciət edə bilərsiniz.
-                </p>
-                <Link href={"#"}>Ətraflı</Link>
-              </div>
-              <div className="line-wrapper">
-                {" "}
-                <div className="line"></div>{" "}
-              </div>
-              <div className="card">
-                <h4>İT dəstək</h4>
-                <div className="services-image">
-                  <Image src={ServicesCard3} alt={"Service"} />
-                </div>
-                <p>
-                  Müəssisənizdə yaranan İT problemlərinin mütəxəssislər tərəfində həllini və bu problemlərə
-                  qarşı nəzarət edəcək mütəxəssislərə ehtiyacınız varsa Cybernetics MMC-ə müraciət edə
-                  bilərsiniz.
-                </p>
-                <Link href={"#"}>Ətraflı</Link>
-              </div>
+              <Link href={"/services"}>Ətraflı</Link>
             </div>
           </div>
         </section>

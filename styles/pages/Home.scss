@@ -114,22 +114,30 @@
     position: relative;
     top: -70px;
     .services-bottom-context {
-      @include flex-box(space-between, inherit);
-      .line-wrapper {
-        @include flex-box(center, center);
-
-        .line {
-          width: 1.49915px;
-          background: $mainColor;
-          height: 140px;
-          margin-bottom: 80px;
-        }
+      @include flex-box(normal, normal);
+      flex-direction: column;
+      .services-content {
+        @include flex-box(space-between, inherit);
       }
+
       .card {
         width: 274px;
         height: 480px;
         @include flex-box(space-between, center);
         flex-direction: column;
+        position: relative;
+
+        &:not(:last-child)::after {
+          width: 1.49915px;
+          background: $mainColor;
+          height: 140px;
+          content: "";
+          position: absolute;
+          right: 0;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+
         h4 {
           @include fontSize(24px, 500, 28.13px, white);
           margin-bottom: 72px;
@@ -148,18 +156,19 @@
           @include fontSize(16px, 400, 18.75px, white);
           text-align: center;
         }
-        a {
-          border: 1px solid #ffffff;
-          border-radius: 10px;
-          padding: 10px 70px;
-          @include fontSize(18px, 700, 21.94px, white);
-          text-align: center;
-          font-family: $Montserrat;
-          &:hover {
-            background-color: white;
-            color: $mainColor;
-          }
-        }
+      }
+    }
+    a {
+      margin-top: 30px;
+      border: 1px solid #ffffff;
+      border-radius: 10px;
+      padding: 10px 70px;
+      @include fontSize(18px, 700, 21.94px, white);
+      text-align: center;
+      font-family: $Montserrat;
+      &:hover {
+        background-color: white;
+        color: $mainColor;
       }
     }
   }
