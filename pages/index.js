@@ -50,7 +50,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="training">
+        <section className="training" id="training">
           <div className="training-context container">
             <h1>Təlim-Tədris</h1>
             <div className="training-text-image">
@@ -94,7 +94,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="services">
+        <section className="services" id="services">
           <div className="services-top">
             <div className="services-text">
               <h1>Xidmətlər</h1>
@@ -179,7 +179,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="sislat">
+        <section className="sislat" id="sislat">
           <div className="sislat-context container">
             <div className="sislat-image">
               <Image src={SislatLogo} alt="SislatLogo" />

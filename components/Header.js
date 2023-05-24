@@ -6,6 +6,7 @@ import { useRouter } from "next/router";
 import { az } from "../locales/az";
 import { en } from "../locales/en";
 import { ru } from "../locales/ru";
+import AnchorLink from "react-anchor-link-smooth-scroll-v2";
 
 const Header = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -38,7 +39,11 @@ const Header = () => {
         <nav>
           <ul>
             <li>
-              <Link href={"#"}> Təlim-Tədris </Link>
+              {router.pathname === "/" ? (
+                <AnchorLink href="#training"> Təlim-Tədris </AnchorLink>
+              ) : (
+                <Link href={"#"}> Təlim-Tədris </Link>
+              )}
               <ul className="dropdown">
                 <li>
                   <Link href="/education/preparation">Peşəkar mütəxəssis hazırlığı</Link>
@@ -52,13 +57,22 @@ const Header = () => {
               </ul>
             </li>
             <li>
-              <Link href={"#"}> Xidmətlər </Link>
+              {router.pathname === "/" ? (
+                <AnchorLink href="#services"> Xidmətlər </AnchorLink>
+              ) : (
+                <Link href="/services"> Xidmətlər </Link>
+              )}
             </li>
             <li>
-              <Link href="/sislat"> Sislat </Link>
+              {router.pathname === "/" ? (
+                <AnchorLink href="#sislat"> Sislat </AnchorLink>
+              ) : (
+                <Link href="/sislat"> Sislat </Link>
+              )}
+
               <ul className="dropdown">
                 <li>
-                  <Link href="/si/preparation">Peşəkar mütəxəssis hazırlığı</Link>
+                  <Link href="/education/preparation">Peşəkar mütəxəssis hazırlığı</Link>
                 </li>
                 <li>
                   <Link href="/education/training">Korporativ təlimlər</Link>
