@@ -72,13 +72,13 @@ const Header = () => {
 
               <ul className="dropdown">
                 <li>
-                  <Link href="/education/preparation">Peşəkar mütəxəssis hazırlığı</Link>
+                  <Link href="/sislat/2fa">Sislat 2FA</Link>
                 </li>
                 <li>
-                  <Link href="/education/training">Korporativ təlimlər</Link>
+                  <Link href="/sislat/hotspot">Sislat Hotspot</Link>
                 </li>
                 <li>
-                  <Link href="/education/academic-activity">Akademik fəaliyyət</Link>
+                  <Link href="/sislat/firewall">Sislat Firewall</Link>
                 </li>
               </ul>
             </li>
