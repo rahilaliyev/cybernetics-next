@@ -8,6 +8,60 @@ import DigitalPng from "../../../public/digital.png";
 import CyberPng from "../../../public/cyber.png";
 
 const Preparation = () => {
+  const programmingDatas = [
+    {
+      name: "Veb Proqramlaşdırma",
+      link: "/education/preparation/web-programming",
+    },
+    {
+      name: "Java Proqramlaşdırma",
+      link: "/education/preparation/java-programming",
+    },
+    {
+      name: "SQL Proqramlaşdırma",
+      link: "/education/preparation/sql-programming",
+    },
+    {
+      name: "Veb Proqramlaşdırma",
+      link: "#",
+    },
+    {
+      name: "Python Proqramlaşdırma",
+      link: "#",
+    },
+    {
+      name: ".Net Proqramlaşdırma",
+      link: "#",
+    },
+  ];
+
+  const networkAndSystemDatas = [
+    {
+      name: "Şəbəkə kursları",
+      link: "/education/preparation/network",
+    },
+    {
+      name: "Sistem administratorluğu",
+      link: "/education/preparation/sys-admin",
+    },
+    {
+      name: "SQL Proqramlaşdırma",
+      link: "/education/preparation/sql-programming",
+    },
+    {
+      name: "Veb Proqramlaşdırma",
+      link: "#",
+    },
+    {
+      name: "Python Proqramlaşdırma",
+      link: "#",
+    },
+    {
+      name: ".Net Proqramlaşdırma",
+      link: "#",
+    },
+  ];
+
   return (
     <main className="preparation">
       <section className="preparation-section">
@@ -27,7 +81,7 @@ const Preparation = () => {
           subHeader={"Web Proqramlaşdırma"}
           description={"Consectetur nunc tincidunt pretium facilisi blandit commodo, sit cursus purus.  "}
           className="card"
-          link={"/education/preparation/web-programming"}
+          datas={programmingDatas}
         />
         <PreparationCards
           imageSrc={ConnectPng}
@@ -35,7 +89,7 @@ const Preparation = () => {
           subHeader={"Web Proqramlaşdırma"}
           description={"Consectetur nunc tincidunt pretium facilisi blandit commodo, sit cursus purus.  "}
           className="card-reverse"
-          link={"#"}
+          datas={networkAndSystemDatas}
         />
         <PreparationCards
           imageSrc={DigitalPng}
@@ -43,7 +97,7 @@ const Preparation = () => {
           subHeader={"Web Proqramlaşdırma"}
           description={"Consectetur nunc tincidunt pretium facilisi blandit commodo, sit cursus purus.  "}
           className="card"
-          link={"#"}
+          datas={programmingDatas}
         />
         <PreparationCards
           imageSrc={CyberPng}
@@ -51,7 +105,7 @@ const Preparation = () => {
           subHeader={"Web Proqramlaşdırma"}
           description={"Consectetur nunc tincidunt pretium facilisi blandit commodo, sit cursus purus.  "}
           className="card-reverse"
-          link={"#"}
+          datas={programmingDatas}
         />
       </section>
     </main>

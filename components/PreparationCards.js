@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-const PreparationCards = ({ imageSrc, header, subHeader, description, className, link }) => {
-  const data = ["Veb Proqramlaşdırma", "Java Proqramlaşdırma", "SQL Proqramlaşdırma", "Python Proqramlaşdırma", ".Net Proqramlaşdırma"];
+const PreparationCards = ({ imageSrc, header, subHeader, description, className, datas }) => {
   const [accordion, setAccordion] = useState(0);
 
   const toggleAccordion = (index) => {
@@ -23,15 +22,15 @@ const PreparationCards = ({ imageSrc, header, subHeader, description, className,
       </div>
       <div className="card-right">
         <div className="card-right-context">
-          {data.map((item, index) => (
+          {datas.map((item, index) => (
             <div key={index} onClick={() => toggleAccordion(index)}>
               <div className={accordion === index ? "card-header card-header-active" : "card-header"}>
-                <h3 className={accordion === index ? "active-color" : "no-active-color"}>{item}</h3>
+                <h3 className={accordion === index ? "active-color" : "no-active-color"}>{item.name}</h3>
                 <p className={accordion === index ? "active" : "no-active"}>
                   Consectetur nunc tincidunt pretium facilisi blandit commodo, sit cursus purus.
                 </p>
                 <div className="link">
-                  <Link href={link}>
+                  <Link href={item.link}>
                     <a className={accordion === index ? "active-link" : "no-active-link"}>Ətraflı</a>
                   </Link>
                 </div>
