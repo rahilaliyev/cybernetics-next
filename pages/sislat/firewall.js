@@ -1,6 +1,6 @@
 import React from "react";
 import SislatLogo from "../../public/sislat-page-logo.svg";
-import SislatFirewall from "../../public/sislat-firewall.png";
+import SislatFirewall from "../../public/sislat-firewall-image.png";
 import SislatUrl from "../../public/sislat-url.svg";
 import SislatControl from "../../public/sislat-control.svg";
 import SislatVpn from "../../public/sislat-vpn.svg";
