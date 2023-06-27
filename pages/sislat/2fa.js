@@ -3,7 +3,7 @@ import SislatLogo from "../../public/sislat-page-logo.svg";
 import SislatTvIcon from "../../public/sislat-tv-icon.svg";
 import OkIcon from "../../public/ok-icon-green.svg";
 import Image from "next/image";
-import Sislat2fa from "../../public/sislat-2fa.png";
+import Sislat2faImg from "../../public/sislat-2fa.png";
 import VpnVideo from "../../public/animation1.mp4";
 
 const Sislat2Fa = () => {
@@ -22,7 +22,7 @@ const Sislat2Fa = () => {
               <button className="demo">Demo tələb et</button>
             </div>
             <div className="right">
-              <Image src={Sislat2fa} alt="sislat 2fa" />
+              <Image src={Sislat2faImg} alt="sislat 2fa" />
             </div>
           </div>
           <div className="sislat-table-lists">
