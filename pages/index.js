@@ -202,7 +202,7 @@ export default function Home() {
                 {" "}
                 <p>IDS/IPS, Firewall, URl filtrləmə, Applikasiya filtrləmə, VPN və s. özəlliklər</p>
               </div>
-              <Link href={"#"}>Ətraflı</Link>
+              <Link href={"/sislat/firewall"}>Ətraflı</Link>
             </div>
             <div className="line-container">
               <div className="line"></div>
@@ -216,7 +216,7 @@ export default function Home() {
                 {" "}
                 <p>SMS, Otel proqram təminatı, Sponsor tipli girişlər, loglama və s. özəlliklər</p>
               </div>
-              <Link href={"#"}>Ətraflı</Link>
+              <Link href={"/sislat/hotspot"}>Ətraflı</Link>
             </div>
             <div className="line-container">
               <div className="line"></div>
@@ -233,7 +233,7 @@ export default function Home() {
                   VPN qoşulmar üçün sms və ya google autoidentifikator ilə 2-ci təsdiqləmə həyata keçirir.
                 </p>
               </div>{" "}
-              <Link href={"#"}>Ətraflı</Link>
+              <Link href={"/sislat/2fa"}>Ətraflı</Link>
             </div>
           </div>
         </section>
