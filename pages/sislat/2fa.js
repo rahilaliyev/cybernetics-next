@@ -3,7 +3,7 @@ import SislatLogo from "../../public/sislat-page-logo.svg";
 import SislatTvIcon from "../../public/sislat-tv-icon.svg";
 import OkIcon from "../../public/ok-icon-green.svg";
 import Image from "next/image";
-import Sislat2fa from "../../public/sislat-2fa.PNG";
+import Sislat2fa from "../../public/sislat-2fa.png";
 import VpnVideo from "../../public/animation1.mp4";
 
 const Sislat2Fa = () => {
